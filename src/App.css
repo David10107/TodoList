@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Freeman&family=Patua+One&family=Poetsen+One&display=swap');
+
+body {
+    padding: 0px;
+    margin: 0px;
+    background: black;
+    color: white;
+    font-family: poetsen one;
+}
+
+.App {
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+    margin: 30px auto;
+    /* margin: 0px; */
+}
+
+h1 span {
+    font-size: 15px;
+    color: rgb(70, 70, 70);
+}
+
+.container {
+    padding: 20px;
+    background: rgb(38, 38, 38);
+    max-width: 50%;
+    margin: 0px auto;
+    border-radius: 20px;
+}
+
+.inputDiv {
+    height: 5.5rem;
+    border-radius: 15px;
+    background: rgb(55, 55, 55);
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.inputTask {
+    width: 60%;
+    height: 50%;
+    padding: 0px 10px;
+    border: none;
+    border-radius: 18px;
+    font-size: 17px;
+    outline: none;
+    background: rgb(38, 38, 38);
+    color: white;
+    caret-color: white;
+}
+
+.inputDiv button {
+    width: 20%;
+    height: 50%;
+    border: none;
+    border-radius: 18px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: ease .4s;
+    background: rgb(38, 38, 38);
+    color: white;
+    font-family: poetsen one;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.list ul {
+    padding: 0px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    list-style: none;
+}
+
+.list ul li {
+    background: rgb(55, 55, 55);
+    border-radius: 15px;
+    height: 4.5rem;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 20px;
+    font-size: 1.3em;
+    text-transform: capitalize;
+}
+
+
+/*================================================================*/
+/*================================================================*/
+
+
+.deleteLi {
+    width: 13%;
+    height: 55%;
+    background: rgb(110, 10, 10);
+    color: white;
+    border: none;
+    border-radius: 13px;
+    transition: ease .4s;
+    cursor: pointer;
+    font-size: 12px;
+    font-family: poetsen one;
+    letter-spacing: 1px;
+    user-select: none;
+}
+
+.list {
+    text-align: left;
+    margin-top: 30px;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.checkbox {
+    width: 16px;
+    height: 16px;
+    accent-color: rgb(0, 0, 0);
+    margin-right: 10px;
+}
+
+
+
+
+@media(max-width: 500px) {
+
+    .container {
+        max-width: 75%;
+    }
+
+    .inputTask {
+        width: 50%;
+        border-radius: 15px;
+        font-size: 15px;
+    }
+
+    .inputDiv button {
+        width: 25%;
+        border-radius: 15px;
+        font-size: 12px;
+    }
+
+    .list ul li {
+        padding: 0px 15px;
+    }
+
+    .deleteLi {
+        width: 20%;
+    }
+
+}
